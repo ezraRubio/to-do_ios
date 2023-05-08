@@ -8,9 +8,27 @@
 import SwiftUI
 
 struct SignUpView: View {
+    @StateObject var viewModel = SignUpViewViewModel()
+    
     var body: some View {
         VStack {
             HeaderView(title: "To Do List", subtitle: "join")
+            
+            Form {
+                TextField("Name", text: $viewModel.name)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
+                TextField("Email", text: $viewModel.email)
+                    .textFieldStyle(DefaultTextFieldStyle())
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
+                SecureField("Password", text: $viewModel.password)
+                
+                TDButton(title:"Register", background:.green){
+                    
+                }
+            }
+            .offset(y:-80)
             
             Spacer()
         }

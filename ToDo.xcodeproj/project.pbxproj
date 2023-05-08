@@ -32,6 +32,7 @@
 		D04BF2602A08448400573F14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D04BF25F2A08448400573F14 /* GoogleService-Info.plist */; };
 		D04BF2632A08DB4C00573F14 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF2622A08DB4C00573F14 /* HeaderView.swift */; };
 		D04BF2652A0980B300573F14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04BF2642A0980B300573F14 /* LaunchScreen.storyboard */; };
+		D04BF2672A09862B00573F14 /* TDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF2662A09862B00573F14 /* TDButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		D04BF25F2A08448400573F14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D04BF2622A08DB4C00573F14 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D04BF2642A0980B300573F14 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D04BF2662A09862B00573F14 /* TDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				D04BF2492A083FE200573F14 /* SignUpView.swift */,
 				D04BF24B2A08400200573F14 /* ToDoItemView.swift */,
 				D04BF2622A08DB4C00573F14 /* HeaderView.swift */,
+				D04BF2662A09862B00573F14 /* TDButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				D04BF25C2A08410800573F14 /* SignUpViewViewModel.swift in Sources */,
 				D04BF25E2A08411800573F14 /* ToDoItemViewViewModel.swift in Sources */,
 				D04BF2282A0811EF00573F14 /* MainView.swift in Sources */,
+				D04BF2672A09862B00573F14 /* TDButton.swift in Sources */,
 				D04BF2522A0840C800573F14 /* MainViewViewModel.swift in Sources */,
 				D04BF2502A08408D00573F14 /* ToDoItem.swift in Sources */,
 				D04BF2582A0840F100573F14 /* CreateItemViewViewModel.swift in Sources */,
