@@ -9,10 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        VStack {
-            Text("To Do App")
-        }
-        .padding()
+            LogInView()
     }
 }
 

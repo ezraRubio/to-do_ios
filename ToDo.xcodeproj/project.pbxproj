@@ -11,7 +11,6 @@
 		D04BF2282A0811EF00573F14 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF2272A0811EF00573F14 /* MainView.swift */; };
 		D04BF22A2A0811F100573F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04BF2292A0811F100573F14 /* Assets.xcassets */; };
 		D04BF22D2A0811F100573F14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04BF22C2A0811F100573F14 /* Preview Assets.xcassets */; };
-		D04BF2352A08192100573F14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D04BF2342A08192100573F14 /* GoogleService-Info.plist */; };
 		D04BF2382A0838E500573F14 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D04BF2372A0838E500573F14 /* FirebaseAuth */; };
 		D04BF23A2A0838E500573F14 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D04BF2392A0838E500573F14 /* FirebaseFirestore */; };
 		D04BF23C2A0838E500573F14 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D04BF23B2A0838E500573F14 /* FirebaseFirestoreSwift */; };
@@ -30,6 +29,9 @@
 		D04BF25A2A0840FC00573F14 /* LogInViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF2592A0840FC00573F14 /* LogInViewViewModel.swift */; };
 		D04BF25C2A08410800573F14 /* SignUpViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF25B2A08410800573F14 /* SignUpViewViewModel.swift */; };
 		D04BF25E2A08411800573F14 /* ToDoItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF25D2A08411800573F14 /* ToDoItemViewViewModel.swift */; };
+		D04BF2602A08448400573F14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D04BF25F2A08448400573F14 /* GoogleService-Info.plist */; };
+		D04BF2632A08DB4C00573F14 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF2622A08DB4C00573F14 /* HeaderView.swift */; };
+		D04BF2652A0980B300573F14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04BF2642A0980B300573F14 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +41,6 @@
 		D04BF2292A0811F100573F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D04BF22C2A0811F100573F14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D04BF22E2A0811F100573F14 /* ToDo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToDo.entitlements; sourceTree = "<group>"; };
-		D04BF2342A08192100573F14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D04BF2412A083F3900573F14 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D04BF2432A083F6A00573F14 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		D04BF2452A083FCB00573F14 /* CreateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemView.swift; sourceTree = "<group>"; };
@@ -55,6 +56,9 @@
 		D04BF2592A0840FC00573F14 /* LogInViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewViewModel.swift; sourceTree = "<group>"; };
 		D04BF25B2A08410800573F14 /* SignUpViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewViewModel.swift; sourceTree = "<group>"; };
 		D04BF25D2A08411800573F14 /* ToDoItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemViewViewModel.swift; sourceTree = "<group>"; };
+		D04BF25F2A08448400573F14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D04BF2622A08DB4C00573F14 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D04BF2642A0980B300573F14 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 				D04BF2472A083FD700573F14 /* LogInView.swift */,
 				D04BF2492A083FE200573F14 /* SignUpView.swift */,
 				D04BF24B2A08400200573F14 /* ToDoItemView.swift */,
+				D04BF2622A08DB4C00573F14 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,8 +154,9 @@
 		D04BF2402A083D6A00573F14 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				D04BF2642A0980B300573F14 /* LaunchScreen.storyboard */,
+				D04BF25F2A08448400573F14 /* GoogleService-Info.plist */,
 				D04BF2292A0811F100573F14 /* Assets.xcassets */,
-				D04BF2342A08192100573F14 /* GoogleService-Info.plist */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -222,8 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04BF22D2A0811F100573F14 /* Preview Assets.xcassets in Resources */,
+				D04BF2652A0980B300573F14 /* LaunchScreen.storyboard in Resources */,
 				D04BF22A2A0811F100573F14 /* Assets.xcassets in Resources */,
-				D04BF2352A08192100573F14 /* GoogleService-Info.plist in Resources */,
+				D04BF2602A08448400573F14 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04BF2482A083FD700573F14 /* LogInView.swift in Sources */,
+				D04BF2632A08DB4C00573F14 /* HeaderView.swift in Sources */,
 				D04BF25C2A08410800573F14 /* SignUpViewViewModel.swift in Sources */,
 				D04BF25E2A08411800573F14 /* ToDoItemViewViewModel.swift in Sources */,
 				D04BF2282A0811EF00573F14 /* MainView.swift in Sources */,
@@ -311,9 +319,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -364,9 +373,10 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -385,6 +395,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -416,6 +428,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

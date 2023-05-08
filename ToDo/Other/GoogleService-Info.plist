@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>886202101302-qr1tgdepht0aikmh0s1ejkf7r7as37id.apps.googleusercontent.com</string>
+	<string>26230619292-o2h0vc7o6ab352d7tibansvubhav6qsi.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.886202101302-qr1tgdepht0aikmh0s1ejkf7r7as37id</string>
+	<string>com.googleusercontent.apps.26230619292-o2h0vc7o6ab352d7tibansvubhav6qsi</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBsq-Jy0H-a-KAcFRADbXoElMdhutkmDS4</string>
+	<string>AIzaSyCiV5guTe57iJOJgYTlbJnFpp-3M5rKuN0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>886202101302</string>
+	<string>26230619292</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.ezrarubio.ToDo</string>
 	<key>PROJECT_ID</key>
-	<string>my-own-tweeter</string>
+	<string>to-do-ios-app-swift</string>
 	<key>STORAGE_BUCKET</key>
-	<string>my-own-tweeter.appspot.com</string>
+	<string>to-do-ios-app-swift.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:886202101302:ios:a29337949f41bcd77fb297</string>
+	<string>1:26230619292:ios:5c06a63f5353bedd974159</string>
 </dict>
 </plist>

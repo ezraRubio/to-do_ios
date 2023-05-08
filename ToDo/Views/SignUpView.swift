@@ -9,7 +9,11 @@ import SwiftUI
 
 struct SignUpView: View {
     var body: some View {
-        Text("Sign Up")
+        VStack {
+            HeaderView(title: "To Do List", subtitle: "join")
+            
+            Spacer()
+        }
     }
 }
 
