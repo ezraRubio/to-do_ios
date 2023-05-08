@@ -16,6 +16,10 @@ struct LogInView: View {
                 HeaderView(title: "To Do List", subtitle: "welcome")
                 
                 Form {
+                    if !viewModel.error.isEmpty {
+                        Text(viewModel.error)
+                            .foregroundColor(.red)
+                    }
                     TextField("Email", text: $viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
                         .autocorrectionDisabled()
@@ -25,7 +29,7 @@ struct LogInView: View {
                         .textFieldStyle(DefaultTextFieldStyle())
 
                     TDButton(title:"Log In", background: .blue) {
-                        
+                        viewModel.logIn()
                     }
                 }
                 .offset(y:-80)
