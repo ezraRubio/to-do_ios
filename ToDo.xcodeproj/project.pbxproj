@@ -33,6 +33,7 @@
 		D04BF2632A08DB4C00573F14 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF2622A08DB4C00573F14 /* HeaderView.swift */; };
 		D04BF2652A0980B300573F14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04BF2642A0980B300573F14 /* LaunchScreen.storyboard */; };
 		D04BF2672A09862B00573F14 /* TDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF2662A09862B00573F14 /* TDButton.swift */; };
+		D04BF2692A09957800573F14 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04BF2682A09957800573F14 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		D04BF2622A08DB4C00573F14 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D04BF2642A0980B300573F14 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D04BF2662A09862B00573F14 /* TDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDButton.swift; sourceTree = "<group>"; };
+		D04BF2682A09957800573F14 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				D04BF2642A0980B300573F14 /* LaunchScreen.storyboard */,
 				D04BF25F2A08448400573F14 /* GoogleService-Info.plist */,
 				D04BF2292A0811F100573F14 /* Assets.xcassets */,
+				D04BF2682A09957800573F14 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				D04BF2422A083F3900573F14 /* ProfileView.swift in Sources */,
 				D04BF24E2A08407100573F14 /* User.swift in Sources */,
 				D04BF2562A0840E400573F14 /* ToDoListViewViewModel.swift in Sources */,
+				D04BF2692A09957800573F14 /* Extensions.swift in Sources */,
 				D04BF24C2A08400200573F14 /* ToDoItemView.swift in Sources */,
 				D04BF25A2A0840FC00573F14 /* LogInViewViewModel.swift in Sources */,
 				D04BF2442A083F6A00573F14 /* ToDoListView.swift in Sources */,

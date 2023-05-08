@@ -15,6 +15,11 @@ struct SignUpView: View {
             HeaderView(title: "To Do List", subtitle: "join")
             
             Form {
+                if !viewModel.error.isEmpty {
+                    Text(viewModel.error)
+                        .foregroundColor(.red)
+                }
+                
                 TextField("Name", text: $viewModel.name)
                     .textFieldStyle(DefaultTextFieldStyle())
                     .autocorrectionDisabled()
@@ -25,7 +30,7 @@ struct SignUpView: View {
                 SecureField("Password", text: $viewModel.password)
                 
                 TDButton(title:"Register", background:.green){
-                    
+                    viewModel.signUp()
                 }
             }
             .offset(y:-80)
