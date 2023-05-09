@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct ToDoItem: Codable {
+struct ToDoItem: Codable, Identifiable {
+    let id: String
     let title: String
-    let dueDate: Date
+    let dueDate: TimeInterval
     let createdAt: TimeInterval
-    let createdById: String
+    var isDone: Bool
+    
+    mutating func setDone(_ state: Bool) {
+        isDone = state
+    }
 }

@@ -18,22 +18,30 @@ class CreateItemViewViewModel: ObservableObject {
     init() {}
     
     func save() {
-        var uid: String = ""
-        let currentUser = Auth.auth().currentUser
-        if let currentUser = currentUser {uid = currentUser.uid}
+        guard isNewItemValid() else {
+            return
+        }
         
-        guard !uid.isEmpty else {
+        guard let userId = Auth.auth().currentUser?.uid else {
             errorMessage = "ups! somethign happened. no user logged in"
             showError = true
             return
         }
         
-        let newItem = ToDoItem(title: title, dueDate: dueDate, createdAt: Date().timeIntervalSince1970, createdById: uid)
+        let newItem = ToDoItem(id: UUID().uuidString,
+                               title: title,
+                               dueDate: dueDate.timeIntervalSince1970,
+                               createdAt: Date().timeIntervalSince1970,
+                               isDone: false
+        )
         
         let db = Firestore.firestore()
         
-        db.collection("items")
-            .addDocument(data: newItem.structAsDictionary())
+        db.collection("users")
+            .document(userId)
+            .collection("items")
+            .document(newItem.id)
+            .setData(newItem.structAsDictionary())
     }
     
     func isNewItemValid() -> Bool {
