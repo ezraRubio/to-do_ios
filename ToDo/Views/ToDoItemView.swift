@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ToDoItemView: View {
+    @StateObject var viewModel = ToDoItemViewViewModel()
+    
     var body: some View {
-        Text("To Do Item")
+        HStack {
+            Text(viewModel.title)
+            Text(viewModel.dueDate.formatted())
+        }
     }
 }
 

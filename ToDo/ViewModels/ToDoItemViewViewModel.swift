@@ -8,6 +8,8 @@
 import Foundation
 
 class ToDoItemViewViewModel: ObservableObject {
+    @Published var title: String = "something"
+    @Published var dueDate: Date = Date()
     
     init() {}
 }

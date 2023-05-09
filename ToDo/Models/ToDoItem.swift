@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct ToDoItem: Codable {
+    let title: String
+    let dueDate: Date
+    let createdAt: TimeInterval
+    let createdById: String
+}
