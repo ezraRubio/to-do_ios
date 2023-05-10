@@ -9,17 +9,23 @@ import SwiftUI
 
 struct ToDoItemView: View {
     @StateObject var viewModel = ToDoItemViewViewModel()
+    private var todo: ToDoItem
+    
+    init(todo: ToDoItem) {
+        self.todo = todo
+    }
     
     var body: some View {
         HStack {
-            Text(viewModel.title)
-            Text(viewModel.dueDate.formatted())
+            Text(todo.title)
+            Text(viewModel.formatDate(todo.dueDate))
         }
     }
 }
 
 struct ToDoItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ToDoItemView()
+        let todo = ToDoItem(id: UUID().uuidString, title:"todo", dueDate: Date().timeIntervalSince1970, createdAt: Date().timeIntervalSince1970, isDone: false)
+        ToDoItemView(todo: todo)
     }
 }
