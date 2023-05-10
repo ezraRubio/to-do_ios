@@ -13,7 +13,11 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
+                Button {
+                    viewModel.logOut()
+                } label: {
+                    Text("Log Out")
+                }
             }
             .navigationTitle("Profile")
         }
