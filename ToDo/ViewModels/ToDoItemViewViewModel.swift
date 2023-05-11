@@ -9,7 +9,11 @@ import FirebaseFirestore
 import Foundation
 
 class ToDoItemViewViewModel: ObservableObject {
-    init() {}
+    private let userId: String
+    
+    init(userId: String) {
+        self.userId = userId
+    }
     
     func formatDate(_ timeInterval: TimeInterval) -> String {
         return Date(timeIntervalSince1970: timeInterval).formatted(date: .abbreviated, time: .shortened)
@@ -19,7 +23,7 @@ class ToDoItemViewViewModel: ObservableObject {
         let db = Firestore.firestore()
         print(id)
         db.collection("users")
-            .document("uDfu2XSLRtd2Y4tkFHRJaEw2jjB3")
+            .document(userId)
             .collection("items")
             .document(id)
             .setData(["isDone": !isDone], merge: true) { err in

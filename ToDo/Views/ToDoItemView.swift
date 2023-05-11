@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ToDoItemView: View {
-    @StateObject var viewModel = ToDoItemViewViewModel()
+    @StateObject var viewModel: ToDoItemViewViewModel
     private var todo: ToDoItem
     
-    init(todo: ToDoItem) {
+    init(todo: ToDoItem, uid: String) {
         self.todo = todo
+        self._viewModel = StateObject(
+            wrappedValue: ToDoItemViewViewModel(userId: uid)
+        )
     }
     
     var body: some View {
@@ -38,6 +41,6 @@ struct ToDoItemView: View {
 struct ToDoItemView_Previews: PreviewProvider {
     static var previews: some View {
         let todo = ToDoItem(id: UUID().uuidString, title:"todo", dueDate: Date().timeIntervalSince1970, createdAt: Date().timeIntervalSince1970, isDone: true)
-        ToDoItemView(todo: todo)
+        ToDoItemView(todo: todo, uid: "123")
     }
 }

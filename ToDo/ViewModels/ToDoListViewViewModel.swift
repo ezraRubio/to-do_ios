@@ -10,14 +10,17 @@ import Foundation
 
 class ToDoListViewViewModel: ObservableObject {
     @Published var isCreateItemPresented = false
+    private let uid: String
     
-    init() {}
+    init(userId: String) {
+        self.uid = userId
+    }
     
     func deleteTodo(id: String) {
         let db = Firestore.firestore()
 
         db.collection("users")
-            .document("uDfu2XSLRtd2Y4tkFHRJaEw2jjB3")
+            .document(uid)
             .collection("items")
             .document(id)
             .delete() { err in
