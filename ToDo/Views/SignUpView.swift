@@ -13,6 +13,7 @@ struct SignUpView: View {
     var body: some View {
         VStack {
             HeaderView(title: "To Do List", subtitle: "join")
+                .offset(y: -50)
             
             Form {
                 if !viewModel.error.isEmpty {
@@ -37,6 +38,7 @@ struct SignUpView: View {
             
             Spacer()
         }
+        .ignoresSafeArea(.keyboard)
     }
 }
 

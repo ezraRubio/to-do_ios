@@ -41,6 +41,7 @@ struct LogInView: View {
                 .offset(y:-50)
                 Spacer()
             }
+            .ignoresSafeArea(.keyboard)
         }
     }
 }

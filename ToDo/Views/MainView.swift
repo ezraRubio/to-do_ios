@@ -18,13 +18,14 @@ struct MainView: View {
         }
     }
     
+    @ViewBuilder
     var accountView: some View {
         TabView {
             ToDoListView(uid: viewModel.currentUserId)
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            ProfileView()
+            ProfileView(uid: viewModel.currentUserId)
                 .tabItem{
                     Label("Profile", systemImage: "person.circle")
                 }
