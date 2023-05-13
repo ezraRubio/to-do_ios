@@ -21,7 +21,7 @@ class ToDoItemViewViewModel: ObservableObject {
     
     func toggleIsDone(id: String, isDone: Bool) {
         let db = Firestore.firestore()
-        print(id)
+
         db.collection("users")
             .document(userId)
             .collection("items")
